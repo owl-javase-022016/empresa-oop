@@ -1,4 +1,4 @@
-package ejemplo;
+package py.com.owl.empresa.entidades;
 
 public class Persona{
 	private String nombre;
