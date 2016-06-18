@@ -1,6 +1,14 @@
 package py.com.owl.empresa.entidades;
 
 public class Persona{
+	
+	public class Documento {
+	public Documento () {}
+	}
+
+	public static String VERSION = "1.0.0";
+
+
 	private String nombre;
 	private String apellido;
 	private String sexo;
@@ -37,5 +45,13 @@ public class Persona{
 	public void setEdad (int edad){
 		this.edad = edad;
 	}	
+
+	protected int getCodigoInternoPersona() {
+		return 123123;
+	}
+	public String toString () {
+	 return nombre + " " + apellido + "." + " Sexo " +sexo+ ". Edad "+edad;
+
+	}
 
 }
