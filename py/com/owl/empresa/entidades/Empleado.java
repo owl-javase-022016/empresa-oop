@@ -7,6 +7,7 @@ public abstract class Empleado extends Persona implements Liquidable, Bonificabl
 
 	private double montoLiquidacion;
 	private int cantidadHijos;
+	private int idEmpleado;
 
 	public double calcularBonificacionFamiliar() {
 		double bonificacionPorHijo = SALARIO_MINIMO_VIGENTE * 5 / 100;
@@ -19,5 +20,13 @@ public abstract class Empleado extends Persona implements Liquidable, Bonificabl
 
 	public int getCantidadHijos() {
 		return cantidadHijos;
+	}
+
+	public void setIdEmpleado(int idEmpleado) {
+		this.idEmpleado=idEmpleado;
+	}
+
+	public int getIdEmpleado() {
+		return idEmpleado;
 	}
 }

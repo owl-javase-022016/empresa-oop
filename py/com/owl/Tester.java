@@ -8,6 +8,9 @@ import py.com.owl.empresa.entidades.SupervisorVentas;
 import py.com.owl.empresa.entidades.Liquidable;
 import py.com.owl.empresa.entidades.Bonificable;
 
+import py.com.owl.empresa.NominaEmpleados;
+import py.com.owl.empresa.NominaVendedores;
+
 import java.util.Date;
 
 public class Tester {
@@ -29,6 +32,9 @@ public class Tester {
 		t.acumularBonificaciones(marta);
 
 		System.out.println(t.totalBonificacionesAPagar);
+		NominaEmpleados nomina = new NominaVendedores();
+
+		Empleado e = nomina.obtenerEmpleado(0);
 	}
 
 
